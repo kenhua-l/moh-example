@@ -1,0 +1,696 @@
+@font-face {
+  font-family: sgds-icons;
+  src: url("../fonts/sgds-icons.ttf") format("truetype"), 
+       url("../fonts/sgds-icons.woff") format("woff"), 
+       url("../fonts/sgds-icons.svg?#sgds-icons") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sgds-icon {
+  font-family: sgds-icons !important;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.sgds-icon-breadcrumb:before {
+  content: "\e9a2"
+}
+
+.sgds-icon-callout:before {
+  content: "\e9a3"
+}
+
+.sgds-icon-hero:before {
+  content: "\e9a4"
+}
+
+.sgds-icon-mainnav:before {
+  content: "\e9a5"
+}
+
+.sgds-icon-sidenav:before {
+  content: "\e9a6"
+}
+
+.sgds-icon-table:before {
+  content: "\e9a7"
+}
+
+.sgds-icon-typography:before {
+  content: "\e9a8"
+}
+
+.sgds-icon-delete:before {
+  content: "\e997"
+}
+
+.sgds-icon-grid-alt:before {
+  content: "\e998"
+}
+
+.sgds-icon-pause-alt:before {
+  content: "\e999"
+}
+
+.sgds-icon-pause:before {
+  content: "\e99a"
+}
+
+.sgds-icon-pencil:before {
+  content: "\e99b"
+}
+
+.sgds-icon-play-alt:before {
+  content: "\e99c"
+}
+
+.sgds-icon-play:before {
+  content: "\e99d"
+}
+
+.sgds-icon-privacy-alt:before {
+  content: "\e99e"
+}
+
+.sgds-icon-privacy:before {
+  content: "\e99f"
+}
+
+.sgds-icon-signal:before {
+  content: "\e9a0"
+}
+
+.sgds-icon-stop:before {
+  content: "\e9a1"
+}
+
+.sgds-icon-telephone:before {
+  content: "\e97c"
+}
+
+.sgds-icon-bookmark-alt:before {
+  content: "\e995"
+}
+
+.sgds-icon-star-alt:before {
+  content: "\e996"
+}
+
+.sgds-icon-guides:before {
+  content: "\e97d"
+}
+
+.sgds-icon-sentimeter:before {
+  content: "\e97e"
+}
+
+.sgds-icon-sharepoint:before {
+  content: "\e97f"
+}
+
+.sgds-icon-sitecore:before {
+  content: "\e980"
+}
+
+.sgds-icon-sitefinity:before {
+  content: "\e981"
+}
+
+.sgds-icon-swiit:before {
+  content: "\e982"
+}
+
+.sgds-icon-wordpress:before {
+  content: "\e983"
+}
+
+.sgds-icon-accordion:before {
+  content: "\e984"
+}
+
+.sgds-icon-button:before {
+  content: "\e985"
+}
+
+.sgds-icon-card:before {
+  content: "\e986"
+}
+
+.sgds-icon-checklist:before {
+  content: "\e987"
+}
+
+.sgds-icon-container:before {
+  content: "\e988"
+}
+
+.sgds-icon-dropdown:before {
+  content: "\e989"
+}
+
+.sgds-icon-footer:before {
+  content: "\e98a"
+}
+
+.sgds-icon-grid:before {
+  content: "\e98b"
+}
+
+.sgds-icon-icons:before {
+  content: "\e98c"
+}
+
+.sgds-icon-masthead:before {
+  content: "\e98d"
+}
+
+.sgds-icon-section:before {
+  content: "\e98e"
+}
+
+.sgds-icon-tab:before {
+  content: "\e98f"
+}
+
+.sgds-icon-atom:before {
+  content: "\e990"
+}
+
+.sgds-icon-molecule:before {
+  content: "\e991"
+}
+
+.sgds-icon-organism:before {
+  content: "\e992"
+}
+
+.sgds-icon-page:before {
+  content: "\e993"
+}
+
+.sgds-icon-template:before {
+  content: "\e994"
+}
+
+.sgds-icon-add-image:before {
+  content: "\e973"
+}
+
+.sgds-icon-attachment:before {
+  content: "\e974"
+}
+
+.sgds-icon-cloud:before {
+  content: "\e975"
+}
+
+.sgds-icon-contact:before {
+  content: "\e976"
+}
+
+.sgds-icon-create-folder:before {
+  content: "\e977"
+}
+
+.sgds-icon-delay:before {
+  content: "\e978"
+}
+
+.sgds-icon-file-copy:before {
+  content: "\e979"
+}
+
+.sgds-icon-file-pdf:before {
+  content: "\e97a"
+}
+
+.sgds-icon-folder:before {
+  content: "\e97b"
+}
+
+.sgds-icon-add-photo:before {
+  content: "\e900"
+}
+
+.sgds-icon-browser:before {
+  content: "\e901"
+}
+
+.sgds-icon-calculator:before {
+  content: "\e902"
+}
+
+.sgds-icon-camera:before {
+  content: "\e903"
+}
+
+.sgds-icon-clock:before {
+  content: "\e904"
+}
+
+.sgds-icon-cloud-download:before {
+  content: "\e905"
+}
+
+.sgds-icon-cloud-success:before {
+  content: "\e906"
+}
+
+.sgds-icon-cloud-upload:before {
+  content: "\e907"
+}
+
+.sgds-icon-database:before {
+  content: "\e908"
+}
+
+.sgds-icon-download:before {
+  content: "\e909"
+}
+
+.sgds-icon-file-add:before {
+  content: "\e90a"
+}
+
+.sgds-icon-file-alt:before {
+  content: "\e90b"
+}
+
+.sgds-icon-file:before {
+  content: "\e90c"
+}
+
+.sgds-icon-hdd:before {
+  content: "\e90d"
+}
+
+.sgds-icon-image:before {
+  content: "\e90e"
+}
+
+.sgds-icon-link:before {
+  content: "\e90f"
+}
+
+.sgds-icon-lock:before {
+  content: "\e910"
+}
+
+.sgds-icon-mail:before {
+  content: "\e911"
+}
+
+.sgds-icon-print:before {
+  content: "\e912"
+}
+
+.sgds-icon-radar:before {
+  content: "\e913"
+}
+
+.sgds-icon-save:before {
+  content: "\e914"
+}
+
+.sgds-icon-share:before {
+  content: "\e915"
+}
+
+.sgds-icon-unlock:before {
+  content: "\e916"
+}
+
+.sgds-icon-upload:before {
+  content: "\e917"
+}
+
+.sgds-icon-volume-mute:before {
+  content: "\e918"
+}
+
+.sgds-icon-volume:before {
+  content: "\e919"
+}
+
+.sgds-icon-docker:before {
+  content: "\e91a"
+}
+
+.sgds-icon-facebook-alt:before {
+  content: "\e91b"
+}
+
+.sgds-icon-facebook:before {
+  content: "\e91c"
+}
+
+.sgds-icon-google:before {
+  content: "\e91d"
+}
+
+.sgds-icon-instagram:before {
+  content: "\e91e"
+}
+
+.sgds-icon-linkedin-alt:before {
+  content: "\e91f"
+}
+
+.sgds-icon-linkedin:before {
+  content: "\e920"
+}
+
+.sgds-icon-person-add:before {
+  content: "\e921"
+}
+
+.sgds-icon-person-cancel:before {
+  content: "\e922"
+}
+
+.sgds-icon-person-remove:before {
+  content: "\e923"
+}
+
+.sgds-icon-person:before {
+  content: "\e924"
+}
+
+.sgds-icon-rss:before {
+  content: "\e925"
+}
+
+.sgds-icon-thumbs-down:before {
+  content: "\e926"
+}
+
+.sgds-icon-thumbs-up:before {
+  content: "\e927"
+}
+
+.sgds-icon-twitter:before {
+  content: "\e928"
+}
+
+.sgds-icon-youtube:before {
+  content: "\e929"
+}
+
+.sgds-icon-add-place:before {
+  content: "\e92a"
+}
+
+.sgds-icon-boat:before {
+  content: "\e92b"
+}
+
+.sgds-icon-bus:before {
+  content: "\e92c"
+}
+
+.sgds-icon-car:before {
+  content: "\e92d"
+}
+
+.sgds-icon-layers:before {
+  content: "\e92e"
+}
+
+.sgds-icon-map:before {
+  content: "\e92f"
+}
+
+.sgds-icon-my-location:before {
+  content: "\e930"
+}
+
+.sgds-icon-place:before {
+  content: "\e931"
+}
+
+.sgds-icon-taxi:before {
+  content: "\e932"
+}
+
+.sgds-icon-traffic:before {
+  content: "\e933"
+}
+
+.sgds-icon-train:before {
+  content: "\e934"
+}
+
+.sgds-icon-arrow-down:before {
+  content: "\e935"
+}
+
+.sgds-icon-arrow-left:before {
+  content: "\e936"
+}
+
+.sgds-icon-arrow-right:before {
+  content: "\e937"
+}
+
+.sgds-icon-arrow-top-left:before {
+  content: "\e938"
+}
+
+.sgds-icon-arrow-top-right:before {
+  content: "\e939"
+}
+
+.sgds-icon-arrow-up:before {
+  content: "\e93a"
+}
+
+.sgds-icon-check:before {
+  content: "\e93b"
+}
+
+.sgds-icon-chevron-down:before {
+  content: "\e93c"
+}
+
+.sgds-icon-chevron-left:before {
+  content: "\e93d"
+}
+
+.sgds-icon-chevron-right:before {
+  content: "\e93e"
+}
+
+.sgds-icon-chevron-up:before {
+  content: "\e93f"
+}
+
+.sgds-icon-cog:before {
+  content: "\e940"
+}
+
+.sgds-icon-cross:before {
+  content: "\e941"
+}
+
+.sgds-icon-ellipsis:before {
+  content: "\e942"
+}
+
+.sgds-icon-home:before {
+  content: "\e943"
+}
+
+.sgds-icon-menu:before {
+  content: "\e944"
+}
+
+.sgds-icon-minus:before {
+  content: "\e945"
+}
+
+.sgds-icon-notification:before {
+  content: "\e946"
+}
+
+.sgds-icon-plus:before {
+  content: "\e947"
+}
+
+.sgds-icon-sg-crest:before {
+  content: "\e948";
+  color: #db0000
+}
+
+.sgds-icon-text-center:before {
+  content: "\e949"
+}
+
+.sgds-icon-text-justify:before {
+  content: "\e94a"
+}
+
+.sgds-icon-text-left:before {
+  content: "\e94b"
+}
+
+.sgds-icon-text-right:before {
+  content: "\e94c"
+}
+
+.sgds-icon-add-comment:before {
+  content: "\e94d"
+}
+
+.sgds-icon-ban:before {
+  content: "\e94e"
+}
+
+.sgds-icon-bookmark:before {
+  content: "\e94f"
+}
+
+.sgds-icon-calendar:before {
+  content: "\e950"
+}
+
+.sgds-icon-chat:before {
+  content: "\e951"
+}
+
+.sgds-icon-circle-info:before {
+  content: "\e952"
+}
+
+.sgds-icon-circle-minus:before {
+  content: "\e953"
+}
+
+.sgds-icon-circle-plus:before {
+  content: "\e954"
+}
+
+.sgds-icon-circle-question:before {
+  content: "\e955"
+}
+
+.sgds-icon-circle-warning:before {
+  content: "\e956"
+}
+
+.sgds-icon-compress-alt:before {
+  content: "\e957"
+}
+
+.sgds-icon-compress:before {
+  content: "\e958"
+}
+
+.sgds-icon-edit:before {
+  content: "\e959"
+}
+
+.sgds-icon-expand-alt:before {
+  content: "\e95a"
+}
+
+.sgds-icon-expand:before {
+  content: "\e95b"
+}
+
+.sgds-icon-external:before {
+  content: "\e95c"
+}
+
+.sgds-icon-feedback:before {
+  content: "\e95d"
+}
+
+.sgds-icon-filter:before {
+  content: "\e95e"
+}
+
+.sgds-icon-info:before {
+  content: "\e95f"
+}
+
+.sgds-icon-list:before {
+  content: "\e960"
+}
+
+.sgds-icon-pin:before {
+  content: "\e961"
+}
+
+.sgds-icon-question:before {
+  content: "\e962"
+}
+
+.sgds-icon-refresh:before {
+  content: "\e963"
+}
+
+.sgds-icon-rsvp-no:before {
+  content: "\e964"
+}
+
+.sgds-icon-rsvp-yes:before {
+  content: "\e965"
+}
+
+.sgds-icon-search:before {
+  content: "\e966"
+}
+
+.sgds-icon-slider-horizontal:before {
+  content: "\e967"
+}
+
+.sgds-icon-slider-vertical:before {
+  content: "\e968"
+}
+
+.sgds-icon-star:before {
+  content: "\e969"
+}
+
+.sgds-icon-sync:before {
+  content: "\e96a"
+}
+
+.sgds-icon-toggle-minus:before {
+  content: "\e96b"
+}
+
+.sgds-icon-toggle-off:before {
+  content: "\e96c"
+}
+
+.sgds-icon-toggle-on:before {
+  content: "\e96d"
+}
+
+.sgds-icon-toggle-plus:before {
+  content: "\e96e"
+}
+
+.sgds-icon-triangle-warning:before {
+  content: "\e96f"
+}
+
+.sgds-icon-warning:before {
+  content: "\e970"
+}
+
+.sgds-icon-zoom-in:before {
+  content: "\e971"
+}
+
+.sgds-icon-zoom-out:before {
+  content: "\e972"
+}
