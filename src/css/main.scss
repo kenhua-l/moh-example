@@ -275,48 +275,41 @@ main {
   //     }
   //   }
   // }
-  // .slick-dots {
-  //   display: block !important;
-  //   position: absolute;
-  //   bottom: 0;
-  //   text-align: left;
-  //   margin: 0 -4px;
-  //   li {
-  //     background: none;
-  //     width: 12px;
-  //     height: 12px;
-  //     border-radius: 0;
-  //     border: 0;
-  //     margin: 0 4px;
-  //     transition: $transition;
-  //     button {
-  //       width: 12px;
-  //       height: 10px;
-  //       background: transparent;
-  //       border-radius: 6px;
-  //       transition: $transition;
-  //       border: 1px solid $primary-dark-blue;
-  //       &::before {
-  //         display: none;
-  //       }
-  //       &:hover {
-  //         background: $primary-blue;
-  //         border-color: $primary-blue;
-  //       }
-  //     }
-  //     &.slick-active {
-  //       width: 32px;
-  //       background-color: transparent;
-  //       button {
-  //         background: $primary-dark-blue;
-  //         width: 32px;
-  //       }
-  //     }
-  //     &:only-child {
-  //       display: none;
-  //     }
-  //   }
-  // }
+  .slick-dots {
+    bottom: 0;
+    text-align: left;
+    margin: 0 -4px;
+    li {
+      width: 12px;
+      height: 12px;
+      margin: 0 4px;
+      transition: $transition;
+      button {
+        width: 12px;
+        height: 10px;
+        border-radius: 6px;
+        transition: $transition;
+        border: 1px solid $primary-dark-blue;
+        &::before {
+          display: none;
+        }
+        &:hover {
+          background: $primary-blue;
+          border-color: $primary-blue;
+        }
+      }
+      &.slick-active {
+        width: 32px;
+        button {
+          background: $primary-dark-blue;
+          width: 32px;
+        }
+      }
+      &:only-child {
+        display: none;
+      }
+    }
+  }
 }
 
 .text-16px {
@@ -405,9 +398,9 @@ section {
 // .vertical-align-middle {
 //   vertical-align: middle;
 // }
-// .overflow-hidden {
-//   overflow: hidden;
-// }
+.overflow-hidden {
+  overflow: hidden;
+}
 // .text-no-underline {
 //   text-decoration: none;
 // }
@@ -417,9 +410,9 @@ section {
 // .h-100 {
 //   height: 100% !important;
 // }
-// .text-grey-blue {
-//   color: $primary-grey-blue !important;
-// }
+.text-grey-blue {
+  color: $primary-grey-blue !important;
+}
 // a.text-grey-blue {
 //   &:hover {
 //     color: $primary-blue !important;
@@ -476,31 +469,31 @@ section {
 .mint-green-bg {
   background: $mint-green-bg;
 }
-// .mint-green-bg-partial {
-//   position: relative;
-//   &::before {
-//     content: "";
-//     background: $mint-green-bg;
-//     height: 400px;
-//     width: 100%;
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     z-index: -1;
-//   }
-//   &.top-half {
-//     &::before {
-//       height: 50%;
-//     }
-//   }
-//   &.bottom-half {
-//     &::before {
-//       height: 50%;
-//       bottom: 0;
-//       top: auto;
-//     }
-//   }
-// }
+.mint-green-bg-partial {
+  position: relative;
+  &::before {
+    content: "";
+    background: $mint-green-bg;
+    height: 400px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  &.top-half {
+    &::before {
+      height: 50%;
+    }
+  }
+  &.bottom-half {
+    &::before {
+      height: 50%;
+      bottom: 0;
+      top: auto;
+    }
+  }
+}
 .cool-blue-bg {
   background: $cool-blue-bg;
 }
@@ -538,11 +531,11 @@ section {
 //   }
 // }
 
-// .flex-column-between {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-// }
+.flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 // .flex-md-bottom-between {
 //   @media (min-width: 768px) {
 //     display: flex;
@@ -1405,52 +1398,53 @@ section {
   }
 }
 
-// .news-box {
-//   padding: 2.4rem 1.6rem;
-//   height: 100%;
-//   width: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   align-items: flex-start;
-//   .title {
-//     margin-bottom: 1rem;
-//     font-size: 1.6rem;
-//     font-weight: 700;
-//   }
-//   .date {
-//     font-weight: 700;
-//     .moh-icon {
-//       font-size: 1.4rem;
-//       padding-right: 0.8rem;
-//     }
-//   }
-//   .read-more {
-//     font-size: 1.6rem;
-//     &:hover, &:focus {
-//       text-decoration: underline;
-//     }
-//   }
-//   @media (min-width: 768px) {
-//     padding: 2.4rem;
-//     margin-bottom: 2.2rem;
-//   }
-//   @media (min-width: 992px) {
-//     padding: 4rem;
-//     .title {
-//       font-size: 2rem;
-//       line-height: 1.2;
-//     }
-//     .date {
-//       .moh-icon {
-//         font-size: 1.6rem;
-//       }
-//     }
-//     .read-more {
-//       font-size: 2rem;
-//     }
-//   }
-// }
+.news-box {
+  padding: 2.4rem 1.6rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  .title {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .date {
+    font-weight: 700;
+    .moh-icon {
+      font-size: 1.4rem;
+      padding-right: 0.8rem;
+    }
+  }
+  .read-more {
+    font-size: 1.6rem;
+    text-decoration: none;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+  @media (min-width: 768px) {
+    padding: 2.4rem;
+    margin-bottom: 2.2rem;
+  }
+  @media (min-width: 992px) {
+    padding: 4rem;
+    .title {
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+    .date {
+      .moh-icon {
+        font-size: 1.6rem;
+      }
+    }
+    .read-more {
+      font-size: 2rem;
+    }
+  }
+}
 
 // .title-content-side-layout {
 //   @media (min-width: 992px) {
@@ -1496,103 +1490,97 @@ section {
 //   }
 // }
 
-// .healthcare-cards {
-//   display: flex;
-//   margin: 0 -0.8rem;
-//   margin-bottom: 2.4rem;
-//   &.slick-dotted {
-//     padding-bottom: 1.5em;
-//     margin-bottom: 2.4rem !important;
-//   }
-//   .slick-track {
-//     display: flex;
-//   }
-//   .slick-list {
-//     overflow: visible;
-//     width: 92.5%;
-//   }
-//   .healthcare-card-container {
-//     flex-basis: 33.333%;
-//     max-width: 33.333%;
-//     padding: 0 0.8rem;
-//     margin-bottom: 1.6rem;
-//     &.slick-slide {
-//       height: inherit;
-//     }
-//   }
-//   .healthcare-card {
-//     display: block;
-//     margin-bottom: 1.6rem;
-//     background: linear-gradient(145deg, #67a236 50%, #8eba53);
-//     color: white;
-//     height: 100%;
-//     text-decoration: none;
-//     .healthcare-img {
-//       img {
-//         width: 100%;
-//         object-fit: cover;
-//       }
-//     }
-//     .healthcare-detail {
-//       padding: 1.6rem;
-//       .tag {
-//         font-weight: 400;
-//         font-size: 1.6rem;
-//       }
-//       .title {
-//         margin-bottom: 0;
-//         font-size: 1.6rem;
-//         font-weight: 700;
-//       }
-//     }
-//     &:hover {
-//       box-shadow: $shadow-hover;
-//     }
-//     &:focus {
-//       box-shadow: $shadow-hover;
-//       position: relative;
-//       &::after {
-//         content: "";
-//         display: block;
-//         width: 100%;
-//         height: 100%;
-//         position: absolute;
-//         border: $border-hover;
-//         top: 0;
-//         left: 0;
-//       }
-//     }
-//   }
-//   .slick-dots {
-//     bottom: 0.8rem;
-//     padding-left: 0.8rem;
-//   }
-//   @media (min-width: 768px) {
-//     margin: 0 -1.2rem;
-//     overflow: hidden;
-//     .healthcare-card-container {
-//       padding: 0 1.2rem;
-//     }
-//     .healthcare-card {
-//       .healthcare-detail {
-//         .title {
-//           font-size: 2rem;
-//           line-height: 1.3;
-//         }
-//       }
-//     }
-//     .slick-dots {
-//       bottom: 0.8rem;
-//       padding-left: 1.2rem;
-//     }
-//   }
-//   @media (min-width: 992px) {
-//     margin: 0 -2rem;
-//     .healthcare-card-container {
-//       padding: 0 2rem;
-//     }
-//   }
-// }
+.healthcare-cards {
+  display: flex;
+  margin: 0 -0.8rem;
+  &.slick-dotted {
+    padding-bottom: 1.5em;
+  }
+  .slick-track {
+    display: flex;
+  }
+  .slick-list {
+    overflow: visible;
+    width: 92.5%;
+  }
+  .healthcare-card-container {
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+    padding: 0 0.8rem;
+    margin-bottom: 1.6rem;
+    &.slick-slide {
+      height: inherit;
+    }
+  }
+  .healthcare-card {
+    display: block;
+    margin-bottom: 1.6rem;
+    background: linear-gradient(145deg, #67a236 50%, #8eba53);
+    color: white;
+    height: 100%;
+    text-decoration: none;
+    .healthcare-img {
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .healthcare-detail {
+      padding: 1.6rem;
+      .tag {
+        font-weight: 600;
+        font-size: 1.6rem;
+      }
+      .title {
+        margin-bottom: 0;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+    }
+    &:hover {
+      box-shadow: $shadow-hover;
+    }
+    &:focus {
+      box-shadow: $shadow-hover;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border: $border-hover;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  .slick-dots {
+    bottom: 0.8rem;
+    padding-left: 0.8rem;
+  }
+  @media (min-width: 768px) {
+    margin: 0 -1.2rem;
+    overflow: hidden;
+    .healthcare-card-container {
+      padding: 0 1.2rem;
+    }
+    .healthcare-card {
+      .healthcare-detail {
+        .title {
+          font-size: 2rem;
+          line-height: 1.3;
+        }
+      }
+    }
+    .slick-dots {
+      padding-left: 1.2rem;
+    }
+  }
+  @media (min-width: 992px) {
+    margin: 0 -2rem;
+  }
+}
 
 // // social media
 // .social-media-slider {

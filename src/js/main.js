@@ -34,5 +34,29 @@ $(function() {
 });
 
 $(window).on('resize orientationchange load', function(e) {
+  var windowWidth = $(window).outerWidth();
+  if(windowWidth >= 992) {
+    if($('.healthcare-cards').hasClass('slick-initialized')) {
+      $('.healthcare-cards').slick('unslick');
+    }
+  } else if(windowWidth >= 576) {
+    if($('.healthcare-cards').hasClass('slick-initialized')) {
+      $('.healthcare-cards').slick('unslick');
+    }
+    $('.healthcare-cards').slick({
+      dots: true,
+      arrows: false,
+      slidesToShow: 2,
+    });
+  } else {
+    if($('.healthcare-cards').hasClass('slick-initialized')) {
+      $('.healthcare-cards').slick('unslick');
+    }
+    $('.healthcare-cards').slick({
+      dots: true,
+      arrows: false
+    });
+  }
+
 
 }).resize();
