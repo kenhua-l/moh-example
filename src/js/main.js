@@ -1,6 +1,5 @@
 $(function() {
   // everything on document ready
-  
   $('.video').on('click', function() {
     $('.video').removeClass('focus');
     $(this).addClass('focus');
@@ -40,9 +39,6 @@ $(function() {
     $list.animate({
       height: height + 24
     });
-    // $(this).find('.slick-slide[data-slick-index=0] iframe').animate({
-    //   height: height + 24
-    // });
   });
 
   $('.partner-popper').magnificPopup({
@@ -51,7 +47,12 @@ $(function() {
     mainClass: 'partner-modal'
   });
 
-
+  $('.graph-popper').magnificPopup({
+    type:'inline',
+    midClick: true,
+    fixedBgPos: true,
+    mainClass: 'graph-modal'
+  });
 
   // tab
   $(".tab-container .tab-list .tab-list-item").on("click", function () {
@@ -94,7 +95,6 @@ $(window).on('resize orientationchange load', function(e) {
     });
   }
 
-
   $('.button-links').each(function() {
     $(this).find('.button-link').height('auto');
     var maxheight = 0;
@@ -104,6 +104,14 @@ $(window).on('resize orientationchange load', function(e) {
     $(this).find('.button-link').height(maxheight);
   });
 
+  $('.graphs-section').each(function() {
+    $(this).find('.graph-title').height('auto');
+    var maxheight = 0;
+    $(this).find('.graph-title').each(function() {
+      if($(this).height() > maxheight) maxheight = $(this).height();
+    });
+    $(this).find('.graph-title').height(maxheight);
+  });
 
   if(windowWidth >= 768) {
     setTimeout(function() {
