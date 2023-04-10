@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Covid-19 Charts</title>
+    @@include('partials/head.html')
+  </head>
+  <body class="">
+    @@include('partials/header.html')
+    <main class="">
+      <div class="container py-4">
+        <h1>Covid-19 Clusters</h1>
+        <p>
+          This project was experimented but not realised due to a sudden spike and insufficient data. 
+          Would also like to shout out to my intern (@DerrickKaiHao) at the time who helped with this rapid prototype.       
+        </p>
+        <div class="pt-3">
+          <a id="back-link"><span class="sgds-icon sgds-icon-arrow-left"></span> Back</a>
+          <div id="covid-cluster"></div>
+        </div>
+        <div class="scroll-top">
+          <div class="scroll-top-container">
+            <span class="sgds-icon sgds-icon-arrow-up"></span>
+          </div>
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="container position-relative">
+          <button class="close">
+            <span></span>
+            <span></span>
+          </button>
+          <h3 id="case-number"></h3>
+          <table class="table">
+            <tbody id="case-info">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    @@include('partials/scripts.html')
+    <script src="js/d3.min.js" type="text/javascript"></script>
+    <script src="js/cluster.js" type="text/javascript"></script>
+  </body>
+</html>

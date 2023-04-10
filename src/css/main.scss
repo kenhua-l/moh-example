@@ -1381,3 +1381,70 @@ a.text-grey-blue {
     }
   }
 }
+
+// cluster.html
+.cluster-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+  .cluster-item {
+    width: 70px;
+    text-align: center;
+    padding: 0 0.2rem;
+    margin-bottom: 1.6rem;
+    .avatar {
+      border: 1px solid black;
+      padding: 0.5rem;
+      display: inline-block;
+      border-radius: 5rem;
+      color: white;
+      &.selected {
+        border-color: brown;
+      }
+    }
+    img {
+      width: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+.info-container {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid $primary-dark-blue;
+  padding: 3.2rem 0;
+  z-index: 1;
+  .close {
+    background: transparent;
+    border: 0;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    right: 1rem;
+    span {
+      width: 2.5rem;
+      height: 2px;
+      background: #333;
+      display: block;
+      &:first-child {
+        transform: rotate(45deg) translateY(50%);
+      }
+      &:last-child {
+        transform: rotate(135deg) translateY(50%);
+      }
+    }
+  }
+  td {
+    font-size: 1.8rem;
+  }
+}

@@ -68,6 +68,10 @@ $(function() {
 
   $(".tab-container .tab-list .tab-list-item:first-child").click();
 
+  $('.scroll-top').on('click', function() {
+    $(document).scrollTop(0);
+  });
+
 });
 
 $(window).on('resize orientationchange load', function(e) {
@@ -124,3 +128,11 @@ $(window).on('resize orientationchange load', function(e) {
   }
 
 }).resize();
+
+$(window).on('scroll', function() {
+  if($(document).scrollTop() > 20) {
+    $('.scroll-top').show();
+  } else {
+    $('.scroll-top').hide();
+  }
+});
