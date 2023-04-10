@@ -27,18 +27,6 @@ body {
   padding-right: 2rem;
 }
 
-// .justify-content-lg-between {
-//   @media (min-width: 992px) {
-//     display: flex;
-//     justify-content: space-between
-//   }
-// }
-// .text-lg-right {
-//   @media (min-width: 992px) {
-//     text-align: right;
-//   }
-// }
-
 main {
   font-size: 114.28571%; // 16px
   color: $primary-grey-blue;
@@ -235,40 +223,6 @@ main {
     }
   }
 
-  // .slick-arrow {
-  //   height: 2.8rem;
-  //   transition: $transition;
-  //   &::before {
-  //     font-family: "FontAwesome";
-  //     color: $primary-dark-blue;
-  //     font-size: 2.4rem;
-  //     transition: $transition;
-  //     border: solid 2px transparent;
-  //   }
-  //   &:hover {
-  //     &::before {
-  //       background: $primary-dark-blue;
-  //       color: white;
-  //     }
-  //   }
-  //   &:focus {
-  //     &::before {
-  //       background: $primary-dark-blue;
-  //       color: white;
-  //       border-color: $accent-yellow;
-  //     }
-  //   }
-  //   &.slick-prev {
-  //     &::before {
-  //       content: "\f111";
-  //     }
-  //   }
-  //   &.slick-next {
-  //     &::before {
-  //       content: "\f112";
-  //     }
-  //   }
-  // }
   .slick-dots {
     bottom: 0;
     text-align: left;
@@ -382,18 +336,9 @@ section {
 .vertical-align-bottom {
   vertical-align: bottom;
 }
-// .vertical-align-sub {
-//   vertical-align: sub;
-// }
-// .vertical-align-middle {
-//   vertical-align: middle;
-// }
 .overflow-hidden {
   overflow: hidden;
 }
-// .text-no-underline {
-//   text-decoration: none;
-// }
 
 @import 'spacing';
 
@@ -642,82 +587,6 @@ a.text-grey-blue {
   }
 }
 
-// .stats-div {
-//   a {
-//     font-size: 1.6rem;
-//   }
-//   @media (min-width: 768px) {
-//     height: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//   }
-//   @media (min-width: 992px) {
-//     display: flex;
-//     height: 100%;
-//     padding-right: 4rem;
-//     .semibold {
-//       font-size: 1.8rem;
-//     }
-//     a {
-//       font-size: 2rem;
-//     }
-//   }
-// }
-
-// .vaccine-stats {
-//   display: flex;
-//   margin: 0 -1.2rem 2rem;
-//   .vaccine-stat {
-//     padding: 0 1.2rem;
-//     flex-basis: 50%;
-//     max-width: 50%;
-//     .vaccine-icon {
-//       font-size: 2.4rem;
-//       color: $primary-dark-blue;
-//       + .vaccin-icon {
-//         margin-left: -2px;
-//       }
-//     }
-//     .vaccine-number {
-//       padding-top: 0.8rem;
-//     }
-//     .number {
-//       font-size: 2.6rem;
-//       font-weight: 800;
-//       color: $primary-dark-blue;
-//       margin-bottom: 0.8rem;
-//     }
-//   }
-//   @media (min-width: 768px) {
-//     .vaccine-stat {
-//       display: flex;
-//       align-items: flex-start;
-//       .vaccine-icon {
-//         padding-top: 6px;
-//       }
-//       .vaccine-number {
-//         padding-top: 0;
-//         padding-left: 0.8rem;
-//       }
-//       .number {
-//         margin-bottom: 0.25rem;
-//       }
-//     }
-//   }
-//   @media (min-width: 992px) {
-//     .vaccine-stat {
-//       .vaccine-icon {
-//         font-size: 3.2rem;
-//         padding-top: 8px;
-//       }
-//       .number {
-//         font-size: 4rem;
-//       }
-//     }
-//   }
-// }
-
 .situation-stat-row {
   display: block;
   padding: 1.6rem 0 0;
@@ -844,83 +713,6 @@ a.text-grey-blue {
     transform: rotate(45deg);
   }
 }
-
-// .stat-information {
-//   background: white;
-//   border: 1px solid #ddd;
-//   display: flex;
-//   align-items: flex-start;
-//   padding: 2.4rem;
-// }
-
-// // Statistics
-// .statistic-grid {
-//   .statistic-item {
-//     margin-bottom: 1.2rem;
-//     display: flex;
-//     align-items: flex-end;
-//     .stat {
-//       display: flex;
-//       align-items: flex-end;
-//       justify-content: space-between;
-//     }
-//     .stat-icon {
-//       font-size: 1.2rem;
-//       &::before {
-//         font-family: "moh-icons";
-//       }
-//       &.increase {
-//         color: $bright-red;
-//         &::before {
-//           content: "\e901";
-//         }
-//       }
-//       &.decrease {
-//         color: $bright-red;
-//         &::before {
-//           content: "\e902";
-//         }
-//       }
-//       &.still {
-//         font-size: 0.9rem;
-//         &::before {
-//           content: "\e903";
-//         }
-//       }
-//     }
-//     .number {
-//       font-size: 2.6rem;
-//       font-weight: 800;
-//       padding-right: 0.8rem;
-//     }
-//     p {
-//       margin-bottom: 0;
-//     }
-
-//   }
-//   @media (min-width: 768px) {
-//     margin-bottom: 2.4rem;
-//     .statistic-item {
-//       .number {
-//         padding-left: 1rem;
-//       }
-//     }
-//   }
-//   @media (min-width: 992px) {
-//     display: flex;
-//     flex-flow: row wrap;
-//     justify-content: space-between;
-//     .statistic-item {
-//       flex-basis: auto;
-//       max-width: 33.333%;
-//       flex-direction: column;
-//       align-items: flex-start;
-//       .number {
-//         font-size: 4rem;
-//       }
-//     }
-//   }
-// }
 
 .social-icons {
   list-style-type: none;
@@ -1554,7 +1346,7 @@ a.text-grey-blue {
       background: #102a52;
       color: #fff;
       font-size: 1.6rem;
-      border-bottom: 1px solid white;
+      // border-bottom: 1px solid white;
       &.active {
         font-weight: 700;
         background: #2567cb

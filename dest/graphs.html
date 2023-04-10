@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Covid-19 Charts</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/slick.css" rel="stylesheet" />
+<link href="css/slick-theme.css" rel="stylesheet" />
+<link href="css/magnific-popup.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
+    <link href="css/covid19-graphs.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body class="cool-blue-bg">
+    <header>
+  <div>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+    <main class="">
+      <section>
+        <div class="container">
+          <div class="tab-container has-graphs">
+            <ul class="tab-list">
+              <li class="tab-list-item active" data-tab="Hospitalised"><span>Hospitalised</span></li>
+              <li class="tab-list-item" data-tab="Requiring-Oxygen-Supplementation"><span>Requiring Oxygen Supplementation</span></li>
+              <li class="tab-list-item" data-tab="Patients-in-ICU"><span>Patients in ICU</span></li>
+              <li class="tab-list-item" data-tab="Deceased"><span>Deceased</span></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-content-item" role="tabpanel" data-tab="Hospitalised" aria-hidden="false">
+                <div id="weekly-infections"></div>
+              </div>
+              <div class="tab-content-item" role="tabpanel" data-tab="Requiring-Oxygen-Supplementation" aria-hidden="true">
+                <div id="hospitalised"></div>
+              </div>
+              <div class="tab-content-item" role="tabpanel" data-tab="Patients-in-ICU" aria-hidden="true">
+                <div id="severity-check"></div>
+              </div>
+              <div class="tab-content-item" role="tabpanel" data-tab="Deceased" aria-hidden="true">
+                <div id="local-cases-trend"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 py-4">
+              <div class="shadowed-box">
+                <div id="severity-risk"></div>
+              </div>
+            </div>
+            <div class="col-md-6 py-4">
+              <div class="shadowed-box">
+                <div id="vaccination-progress"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 py-4">
+              <div class="shadowed-box">
+                <div id="seven-day-active"></div>
+              </div>
+            </div>
+            <div class="col-md-6 py-4">
+              <div class="shadowed-box">
+                <div id="donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/slick.min.js" type="text/javascript"></script>
+<script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/covid-graphs.js"></script>
+  </body>
+</html>
