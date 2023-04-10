@@ -14,13 +14,29 @@
   </head>
   <body>
     <div id="fb-root"></div>
-    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0" nonce="aPUvKxJl"></script> -->
-    <!-- <script async src="//www.instagram.com/embed.js"></script> -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0" nonce="aPUvKxJl"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
     <header>
-  <div>
-    <span></span>
-    <span></span>
-    <span></span>
+  <div class="container">
+    <div class="menu-icon open" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  
+  <div class="offcanvas offcanvas-start" id="menu">
+    <div class="offcanvas-header">
+      <h2 class="ps-3">MOH Examples Menu</h2>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="">
+        <li><a href="/">Home</a></li>
+        <li><a href="/graphs.html">Covid-19 Charts</a></li>
+      </ul>
+    </div>
   </div>
 </header>
     <main>

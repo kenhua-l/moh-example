@@ -1,0 +1,43 @@
+$transition: 0.3s all;
+header {
+  padding-top: 1.5rem;
+  .menu-icon {
+    width: 4rem;
+    height: 3.2rem;
+    position: relative;
+    span {
+      width: 2.5rem;
+      height: 2px;
+      background: #333;
+      display: block;
+      position: absolute;
+      transform: translateY(-50%);
+      transition: $transition;
+      &:first-child {
+        top: 25%;
+      }
+      &:nth-child(2) {
+        top: 50%;
+      }
+      &:last-child {
+        top: 75%;
+      }
+    }
+  }
+  .offcanvas {
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+      li {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+      }
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        color: #444e62;
+      }
+    }
+  }
+}
